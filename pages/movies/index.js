@@ -26,7 +26,7 @@ export default MoviesList;
 export async function getStaticProps(context) {
   //   const router = useRouter();
   console.log(context);
-  const data = await axios.get("http://localhost:4000/api/movies");
+  const data = await axios.get("http://localhost:8080/api/movies");
   const movies = await data.data.data;
   //   console.log(movies);
   return {
